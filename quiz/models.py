@@ -71,6 +71,9 @@ class Answer(Updated):
     )
     is_right = models.BooleanField(default=False)
 
+    def __str__(self):
+        return self.answer_text
+
 
 
 
